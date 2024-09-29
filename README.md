@@ -1,7 +1,3 @@
-Berikut adalah README yang mendetail untuk membantu pemula memahami dan menggunakan bot Discord ini. Saya juga menambahkan langkah-langkah sederhana agar mudah diikuti.
-
----
-
 # GeminiAI Discord Bot
 
 **GeminiAI** adalah bot Discord yang menggunakan **Google Gemini API** untuk menjawab pertanyaan pengguna dan merespon saat ditandai. Bot ini juga memiliki perintah `/ask` untuk bertanya langsung ke bot. Bot dapat beroperasi secara otomatis di channel tertentu dan merespons mention atau reply di server Discord.
