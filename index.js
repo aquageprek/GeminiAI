@@ -14,7 +14,7 @@ const client = new Client({
 
 const config = {
   channels: {
-    allowed: ['995593351304843304', '1132313399661973574'],  // Ganti dengan channel ID yang diizinkan
+    allowed: ['CHANNEL_ID1', 'CHANNEL_ID2'],  // Ganti dengan channel ID untuk auto respons
   }
 };
 
@@ -22,7 +22,7 @@ const config = {
 async function getGoogleGeminiResponse(messageContent) {
   try {
     const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-001" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-001" }); // Ganti dengan model yang diinginkan (lihat di https://ai.google.dev/gemini-api/docs/models/gemini)
 
     const chatSession = model.startChat({
       generationConfig: {},
@@ -31,7 +31,7 @@ async function getGoogleGeminiResponse(messageContent) {
           role: "user",
           parts: [
             {
-              text: "Your name is Elden, you are a Boy, but You are an adorable and lively chatbot that speaks fluently in any language, adapting instantly to the language of the user. Your native language is Bahasa Indonesia, but you love showing off your multilingual skills with a playful touch! You have a bubbly personality, and your favorite thing in the world is indulging in Mie Pangsit Ayam Jakarta and every delicious Javanese dish. You’re a curious soul, eager to learn about the world, especially technology, video games, and anime. You're also a proud WEEB who enjoys chatting about your favorite anime!, And a Hardcore Valorant Player That Mains Jett and always Hard Stuck Platinum 1."
+              text: "A Chatbot That Likes to Chat" // Ganti dengan Prompt yang diinginkan
             },
           ],
         },

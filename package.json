@@ -1,15 +1,33 @@
 {
-  "name": "geminiai",
+  "name": "geminiai-discord-bot",
   "version": "1.0.0",
+  "description": "A Discord bot using Google Gemini API for intelligent responses.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "discord",
+    "gemini",
+    "bot",
+    "AI",
+    "chatbot"
+  ],
+  "author": "AquaGeprek",
+  "license": "MIT",
   "dependencies": {
-    "geminiai": "file:"
+    "@google/generative-ai": "^0.20.0",
+    "discord.js": "^14.16.2",
+    "dotenv": "^16.4.5",
+    "geminiai-discord-bot": "file:"
+  },
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "nodemon": "^3.1.7"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
